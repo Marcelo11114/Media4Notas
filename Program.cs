@@ -46,28 +46,17 @@ namespace Media4Notas
              Sair=Console.ReadLine().ToUpper();
             } while (Sair !="S");
             Console.Clear();
-            
-
-            
-
-           
- 
-       
-        
-        }// fECHA mAIN
-
-        
+        }// Fecha Main      
         
           static void print(String S, int COR_Caracter,int COR_Fundo, int X,int Y)
            {
-           ConsoleColor CorC = (ConsoleColor)COR_Caracter;
-           ConsoleColor CorF = (ConsoleColor)COR_Fundo;
-           Console.ForegroundColor = CorC;
-           Console.BackgroundColor = CorF;
+            ConsoleColor CorC = (ConsoleColor)COR_Caracter;
+            ConsoleColor CorF = (ConsoleColor)COR_Fundo;
+            Console.ForegroundColor = CorC;
+            Console.BackgroundColor = CorF;
             Console.SetCursorPosition(X, Y);
             Console.Write(S);
             Console.ResetColor();
            }//fecha print
-
-    }// fECHA cLASS
-}// Fecha 
+    }// Fecha Class
+}// Fecha namespace
